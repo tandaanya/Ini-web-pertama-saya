@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Berita - tanda-tanya.com</title>
+    <style>
+        /* CSS Dimulai di Sini */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            /* Latar belakang putih */
+            color: #333333;
+            /* Teks berwarna hitam gelap */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #007bff;
+            /* Biru muda untuk header */
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .logo a {
+            font-size: 28px;
+            text-decoration: none;
+            color: white;
+            margin-left: 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px 0;
+        }
+
+        .sidebar {
+            float: left;
+            width: 20%;
+            padding: 20px;
+            background-color: #f8f9fa;
+            /* Warna latar sidebar */
+            margin-right: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .news {
+            float: left;
+            width: 75%;
+        }
+
+        .news .news-item {
+            background-color: #ffffff;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .news .news-item h3 {
+            color: #007bff;
+            /* Biru muda untuk judul berita */
+        }
+
+        .news .news-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .news .news-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .news .news-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: #007bff;
+            /* Biru muda untuk footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsif untuk tampilan mobile */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                margin-right: 0;
+                padding: 15px;
+            }
+
+            .news {
+                width: 100%;
+            }
+        }
+
+        /* CSS Berakhir di Sini */
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/">tanda-tanya.com</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/politics">POLITIK</a></li>
+                    <li><a href="/law">HUKUM</a></li>
+                    <li><a href="/economy">EKONOMI</a></li>
+                    <li><a href="/metro">METRO</a></li>
+                    <li><a href="/soccer">SEPAKBOLA</a></li>
+                    <li><a href="/sports">OLAHRAGA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Sidebar (optional) -->
+            <aside class="sidebar">
+                <h3>Kategori</h3>
+                <ul>
+                    <li><a href="/politics">Politik</a></li>
+                    <li><a href="/economy">Ekonomi</a></li>
+                    <li><a href="/technology">Teknologi</a></li>
+                    <li><a href="/sports">Olahraga</a></li>
+                    <li><a href="/entertainment">Hiburan</a></li>
+                </ul>
+            </aside>
+
+            <!-- News Articles -->
+            <section class="news">
+                <h2>Berita Terbaru</h2>
+                <div class="article-list">
+                    <article class="news-item">
+                        <img src="news-image1.jpg" alt="Berita 1">
+                        <h3><a href="/news/berita-1">Judul Berita Pertama</a></h3>
+                        <p>Deskripsi singkat berita pertama yang memberikan gambaran umum tentang isi berita...</p>
+                        <p><a href="/news/berita-1">Baca Selengkapnya</a></p>
+                    </article>
+                    <article class="news-item">
+                        <img src="news-image2.jpg" alt="Berita 2">
+                        <h3><a href="/news/berita-2">Judul Berita Kedua</a></h3>
+                        <p>Deskripsi singkat berita kedua yang memberikan gambaran umum tentang isi berita...</p>
+                        <p><a href="/news/berita-2">Baca Selengkapnya</a></p>
+                    </article>
+                    <article class="news-item">
+                        <img src="news-image3.jpg" alt="Berita 3">
+                        <h3><a href="/news/berita-3">Judul Berita Ketiga</a></h3>
+                        <p>Deskripsi singkat berita ketiga yang memberikan gambaran umum tentang isi berita...</p>
+                        <p><a href="/news/berita-3">Baca Selengkapnya</a></p>
+                    </article>
+                    <!-- Tambahkan artikel lainnya di sini -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 tanda-tanya.com - Semua Hak Cipta Dilindungi</p>
+        </div>
+    </footer>
+</body>
+
+</html>
